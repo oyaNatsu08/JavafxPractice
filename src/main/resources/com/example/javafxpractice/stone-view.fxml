@@ -9,6 +9,7 @@
 <!--    -->
 <!--</VBox>-->
 
+<?import javafx.geometry.Insets?>
 <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="275.0" vgap="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxpractice.StoneController">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="0.0" prefWidth="59.0" />
@@ -22,11 +23,11 @@
         <Text style="-fx-font-size: 20px;" text="石の総数：" wrappingWidth="100.318359375" GridPane.rowIndex="1" />
         <Text fx:id="totalFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
         <Text style="-fx-font-size: 20px;" text="1度に取れる石の数：" GridPane.rowIndex="2" />
-        <Text fx:id="takeStoneFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Text fx:id="takeStoneFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <Text style="-fx-font-size: 20px;" text="参加プレイヤー：" GridPane.rowIndex="3" />
-        <Text fx:id="playersFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Text fx:id="playersFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
         <Text style="-fx-font-size: 20px;" text="石の記号：" GridPane.rowIndex="4" />
-        <Text fx:id="markFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+        <Text fx:id="markFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
         <Text style="-fx-font-size: 20px;" text="-------------------------------------------------" GridPane.rowIndex="5" />
 
         <Label fx:id="nameFXML" style="-fx-font-size: 30px;" GridPane.rowIndex="6" />
@@ -38,19 +39,7 @@
         <Label fx:id="winFXML" style="-fx-font-size: 30px; -fx-text-fill: red;" GridPane.rowIndex="12" />
         <Label fx:id="loseFXML" style="-fx-font-size: 30px; -fx-text-fill: blue;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
     </children>
-   <rowConstraints>
-      <RowConstraints maxHeight="50.0" minHeight="25.0" prefHeight="50.0" />
-      <RowConstraints maxHeight="47.0" minHeight="22.0" prefHeight="22.0" />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints minHeight="10.0" prefHeight="30.0" />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0"/>
+    </padding>
 </GridPane>
