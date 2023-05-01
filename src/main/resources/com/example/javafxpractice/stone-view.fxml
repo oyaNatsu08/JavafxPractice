@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<!--<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-font-size: 20px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxpractice.StoneController">-->
+<!--    -->
+<!--    -->
+<!--</VBox>-->
+
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="275.0" vgap="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxpractice.StoneController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="0.0" prefWidth="59.0" />
+      <ColumnConstraints maxWidth="235.0" minWidth="0.0" prefWidth="176.0" />
+      <ColumnConstraints maxWidth="82.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints />
+    </columnConstraints>
+    <children>
+        <Text style="-fx-font-size: 40px;" text="石取りゲームを開始します" />
+        <Text style="-fx-font-size: 20px;" text="石の総数：" wrappingWidth="100.318359375" GridPane.rowIndex="1" />
+        <Text fx:id="totalFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Text style="-fx-font-size: 20px;" text="1度に取れる石の数：" GridPane.rowIndex="2" />
+        <Text fx:id="takeStoneFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Text style="-fx-font-size: 20px;" text="参加プレイヤー：" GridPane.rowIndex="3" />
+        <Text fx:id="playersFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Text style="-fx-font-size: 20px;" text="石の記号：" GridPane.rowIndex="4" />
+        <Text fx:id="markFXML" style="-fx-font-size: 20px;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+        <Text style="-fx-font-size: 20px;" text="-------------------------------------------------" GridPane.rowIndex="5" />
+
+        <Label fx:id="nameFXML" style="-fx-font-size: 30px;" GridPane.rowIndex="6" />
+        <Text fx:id="leftNumberFXML" style="-fx-font-size: 20px" GridPane.rowIndex="7" />
+        <Label fx:id="errorFXML" style="-fx-text-fill: red;" GridPane.rowIndex="8" />
+        <Text text="石の数を入力してください" GridPane.rowIndex="9" />
+        <TextField fx:id="numFXML" GridPane.rowIndex="10" />
+        <Button onAction="#takeStone" text="石を取る" GridPane.rowIndex="11" />
+        <Label fx:id="winFXML" style="-fx-font-size: 30px; -fx-text-fill: red;" GridPane.rowIndex="12" />
+        <Label fx:id="loseFXML" style="-fx-font-size: 30px; -fx-text-fill: blue;" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+    </children>
+   <rowConstraints>
+      <RowConstraints maxHeight="50.0" minHeight="25.0" prefHeight="50.0" />
+      <RowConstraints maxHeight="47.0" minHeight="22.0" prefHeight="22.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
